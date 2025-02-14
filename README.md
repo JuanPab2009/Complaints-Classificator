@@ -11,12 +11,8 @@ An end-to-end pipeline that classifies customer complaints into specific categor
 - [Tech Stack](#tech-stack)
 - [Data Flow](#data-flow)
 - [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Model Serving](#model-serving)
 - [Docker Deployment](#docker-deployment)
 - [Future Improvements](#future-improvements)
-- [License](#license)
 
 ---
 
@@ -117,3 +113,21 @@ Key objectives:
 │   └── training_pipeline.py
 ├── .gitignore
 └── README.md
+```
+
+## Docker Deployment
+### 1. Clone this repo:
+```bash
+git clone https://github.com/JuanPab2009/Complaints-Classificator.git
+cd Complaints-Classificator/app
+```
+### 2. Build Image
+```bash
+docker compose build
+```
+### 3. Start Container
+```bash
+docker compose up
+```
+### Check UI:
+Go to your http://localhost:8501 and write your complaint in order to classify it.
