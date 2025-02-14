@@ -129,5 +129,5 @@ docker compose build
 ```bash
 docker compose up
 ```
-### Check UI:
+### 4. Check UI:
 Go to your http://localhost:8501 and write your complaint in order to classify it.
