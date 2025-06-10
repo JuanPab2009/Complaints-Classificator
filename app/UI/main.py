@@ -4,8 +4,35 @@ import requests
 # Configurar la URL de la API
 API_URL = "http://model:8000/predict"  # Usamos 'model' porque así se llama el servicio en docker-compose
 
-# Título de la aplicación
-st.title("Clasificación de Quejas de Clientes")
+st.set_page_config(
+    page_title="Clasificación de Quejas",
+    page_icon="💬",
+    layout="centered",
+)
+
+st.markdown(
+    """
+    <style>
+        .title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            color: #1a2b5c;
+            margin-bottom: 1rem;
+        }
+        .stApp {
+            background-image: linear-gradient(to bottom right, #fdfbfb, #e0f7fa);
+            background-attachment: fixed;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.markdown(
+    "<div class='title'>Clasificación de Quejas de Clientes</div>",
+    unsafe_allow_html=True,
+)
 
 # Descripción
 st.write("""
